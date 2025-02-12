@@ -1,0 +1,36 @@
+Types of Data That Can Be Used to Create a Pandas Series
+A pandas Series is a one-dimensional labeled array that can store various types of data. The following types of data can be used while creating a Series object in pandas:
+
+1. List
+A Python list can be directly converted into a Series.
+
+import pandas as pd  
+s = pd.Series([10, 20, 30, 40])  
+print(s)  
+
+2. Tuple
+Tuples can also be used to create a Series in pandas.
+
+s = pd.Series((5, 10, 15, 20))  
+print(s)  
+
+3. Dictionary
+When using a dictionary, the keys become the index of the Series, and the values are stored as elements.
+
+data = {'a': 100, 'b': 200, 'c': 300}  
+s = pd.Series(data)  
+print(s)  
+
+4. NumPy Array
+A NumPy array can be converted into a Series, allowing efficient handling of numerical data.
+
+import numpy as np  
+arr = np.array([1, 2, 3, 4, 5])  
+s = pd.Series(arr)  
+print(s)  
+
+5. Scalar Value
+A single value can be assigned to all elements of a Series when an index is provided.
+
+s = pd.Series(7, index=[0, 1, 2, 3, 4])  
+print(s)  
