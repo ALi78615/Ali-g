@@ -1,16 +1,10 @@
 import pandas as pd
-
-# Dictionary storing the number of students in each batch group
 student_data = {
     'MatMIE': 45,
     'Mat DAIS': 30,
     'COMIE': 50,
     'COMEC': 40
 }
-
-# Creating a Pandas Series from the dictionary
 student_series = pd.Series(student_data)
-
-# Displaying the Series
 print("Number of students in each batch group:")
 print(student_series)
